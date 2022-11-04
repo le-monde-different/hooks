@@ -1,0 +1,22 @@
+
+.movieCard {
+    background-color: #9d9d9d;
+    border-radius: 10; 
+    overflow:"hidden"; 
+    box-shadow: 0px 0px 8px #f4eded;
+    width: calc(85vw/3); 
+    height: 480px; ;
+    margin: 30px auto;
+} 
+
+
+ .movieCard:hover {
+    transform: scale(1.1);
+}
+.myApp {
+    background-color: #2a2929;
+    display : grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    gap: 20px;
+}
