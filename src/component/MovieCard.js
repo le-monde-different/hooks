@@ -1,8 +1,8 @@
 import React from "react";
 import { Rating } from "react-simple-star-rating";
-import { Card } from "react-bootstrap";
+import { Card,Button } from "react-bootstrap";
 import "./style.css";
-
+import { Link } from "react-router-dom";
 const MovieCard = ({ movie }) => {
   return (
     <div style={{ margin: "auto"
@@ -16,7 +16,7 @@ const MovieCard = ({ movie }) => {
           justifyContent: "space-between",
         }}
       >
-        <div>
+        <div className="movieCard">
           <Card.Img
             style={{ height: "calc(100vh/2)", width: "calc(85vw/3)" }}
             variant="top"
@@ -36,7 +36,15 @@ const MovieCard = ({ movie }) => {
             </Card.Title>
           </Card.Body>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}></div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <nav>
+          <Link to={`/Description/${movie.id}`} style={{textDecoration:'none'}}>
+          <button className="btn btn-outline-info" style={{margin:10}}
+          variant="succes" size="1g"> Description
+          </button>
+          </Link>
+          </nav>
+        </div>
       </Card>
     </div>
   );
