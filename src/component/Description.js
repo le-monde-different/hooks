@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import "./style.css"
 import { useNavigate, useParams } from "react-router-dom" ;
-import { useState } from 'react'
+
 
 
 const Description=()=>{

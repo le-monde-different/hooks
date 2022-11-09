@@ -20,3 +20,8 @@
     margin: auto;
     gap: 20px;
 }
+.Description{
+    margin :16px;
+    background: #2a2929;
+    color: #9d9d9d;
+}
